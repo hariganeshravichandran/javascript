@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="project2.css">
+</head>
+<body>
+    <button onClick="clickEvt()"onmouseover="mouseOverEvt()" onmouseout="mouseOutEvt()" ondblclick="doubleClickEvt()">Event Btn</button>
+    <button id="btn">Eventlistner btn</button>
+
+    <div onClick="divClicked(event)">
+        <span onclick="spanclicked(event)">
+            <button onclick="btnclicked(event)">Event Bubbling Btn</button>
+            <button id="listenerBtn">Event listner Btn</button>
+        </span>
+    </div>
+
+    <div id="divBubble">
+        <span id="spanBubble">event bubbling example please click here</span>
+    </div>
+    
+    <div id="divCapture">
+        <span id="spanCapture">event capturing example please click here</span>
+    </div>
+    <script src="eventbubblingcapturing.js"></script>
+</body>
+</html>
